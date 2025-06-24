@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seleção de Módulo | Anatomia Interativa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Anatomia Interativa</h1>
+    <p class="subtitulo">Escolha um módulo para começar</p>
+
+    <div class="grid">
+      <div class="card" onclick="abrirModulo('cranio')">
+        🦴<span>Ossos do Crânio</span>
+      </div>
+      <div class="card" onclick="abrirModulo('coluna')">
+        🦴<span>Coluna Vertebral</span>
+      </div>
+      <div class="card" onclick="abrirModulo('mao')">
+        ✋<span>Ossos da Mão</span>
+      </div>
+      <div class="card" onclick="abrirModulo('pe')">
+        🦶<span>Ossos do Pé</span>
+      </div>
+      <div class="card" onclick="abrirModulo('encefalo')">
+        🧠<span>Encéfalo</span>
+      </div>
+      <div class="card" onclick="abrirModulo('coracao')">
+        ❤️<span>Coração</span>
+      </div>
+    </div>
+
+    <button class="voltar" onclick="voltar()">← Voltar</button>
+  </div>
+
+<script>
+  function abrirModulo(modulo) {
+    // Aqui você coloca a lógica pra abrir a página/module desejado.
+    alert("Abrir módulo: " + modulo);
+    // Exemplo real:
+    // window.location.href = modulo + ".html";
+  }
+
+  function voltar() {
+    window.location.href = "index.html";
+  }
+</script>
+
+</body>
+</html>
