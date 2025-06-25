@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Ossos do Crânio</title>
+  <link rel="stylesheet" href="../css/vistaAnteriorCranio.css">
+</head>
+<body>
+  <div class="tela">
+    <div class="instrucoes">
+      <h3>INSTRUÇÕES:</h3>
+      <p>
+        É bem simples! Arraste o nome do osso até o lugar certo na imagem. Se acertar, ele fica verde. Se errar, aparece em vermelho — tente de novo!
+      </p>
+    </div>
+
+    <div class="conteudo">
+      <!-- Coluna lateral esquerda -->
+      <div class="menu-lateral">
+        <ul>
+          <li>Vista lateral do crânio</li>
+          <li>Ossos do quadril</li>
+          <li>Coluna vertebral</li>
+          <li>Ossos da mão</li>
+          <li>Ossos do pé</li>
+          <li>Músculo da mão</li>
+          <li>Músculo do pé</li>
+          <li>Sistema respiratório</li>
+          <li>Encéfalo</li>
+          <li>Sistema nervoso</li>
+          <li>Coração</li>
+          <li><strong>Mais →</strong></li>
+        </ul>
+      </div>
+
+      <!-- Área central -->
+      <div class="imagem-cranio">
+        <h2>Ossos do crânio</h2>
+        <img src="cranio-frontal.png" alt="Crânio" />
+        
+        <!-- Espaços onde soltar os nomes -->
+        <div class="drop-zone" data-resposta="FRONTAL" style="top: 80px; left: 160px;"></div>
+        <div class="drop-zone" data-resposta="PARIETAL" style="top: 160px; left: 40px;"></div>
+        <div class="drop-zone" data-resposta="NASAL" style="top: 200px; left: 180px;"></div>
+        <!-- Adicione os demais como preferir -->
+      </div>
+
+      <!-- Coluna direita com etiquetas -->
+      <div class="respostas">
+        <div class="draggable" draggable="true" data-nome="FRONTAL">FRONTAL</div>
+        <div class="draggable" draggable="true" data-nome="PARIETAL">PARIETAL</div>
+        <div class="draggable" draggable="true" data-nome="NASAL">NASAL</div>
+        <div class="draggable" draggable="true" data-nome="MANDÍBULA">MANDÍBULA</div>
+        <div class="draggable" draggable="true" data-nome="ESFENÓIDE">ESFENÓIDE</div>
+        <!-- Adicione todos os ossos -->
+      </div>
+    </div>
+
+    <!-- Botões -->
+    <div class="botoes">
+      <button onclick="checar()">Checar respostas</button>
+      <button onclick="dica()">Dicas</button>
+      <button onclick="resetar()">Resetar respostas</button>
+    </div>
+  </div>
+
+  <script src="cranio.js"></script>
+</body>
+</html>
