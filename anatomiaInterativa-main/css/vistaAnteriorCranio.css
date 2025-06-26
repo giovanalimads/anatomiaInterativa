@@ -1,4 +1,4 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
     margin: 0;
@@ -7,39 +7,43 @@
   }
 
 body {
-    background-color: #eaeaea;
-    background-image: url('../assets/background.jpg');
+    background-color: #fff;
+    /*background-image: url('../assets/background.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;*/
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-  }*/
-
- /* body {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  background-color: #eaeaea;
-}
-
-.tela {
-  padding: 20px;
-}
+  }
 
 .instrucoes {
-  background-color: #ccc;
-  padding: 15px;
+  background-color: #D1D2D4;
+  padding: 10px;
+  font-size: 15px;
 }
 
+/*MENU ESQUERDO*/
 .conteudo {
   display: flex;
-  margin-top: 20px;
+  margin-top: 10px;
+}
+
+.top-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.material-symbols-outlined{
+  font-size: 20px;
+  cursor: pointer;
 }
 
 .menu-lateral {
-  width: 200px;
-  background-color: #f3f3f3;
+  width: 190px;
+  height: 425px;
+  background-color: #D1D2D4;
   padding: 10px;
+  border-radius: 0px 10px 10px 0px;
 }
 
 .menu-lateral ul {
@@ -48,13 +52,20 @@ body {
 }
 
 .menu-lateral li {
+  font-size: 14px;
   margin: 10px 0;
 }
 
+.mais {
+  text-align: right;
+  cursor: pointer;
+}
+
+/*IMAGEM*/
 .imagem-cranio {
   position: relative;
   margin: 0 auto;
-  width: 500px;
+  width: 300px;
   text-align: center;
 }
 
