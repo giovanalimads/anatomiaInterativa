@@ -17,7 +17,7 @@
 
     <div class="conteudo">
       <!-- Coluna lateral esquerda -->
-      <div class="menu-lateral">
+      <div class="menu-esquerdo">
         <div class="top-menu">
           <p><strong>MAIS JOGOS:</strong></p>
           <span class="material-symbols-outlined">left_panel_close</span>
@@ -44,29 +44,57 @@
         <img src="../assets/anterior-cranio-img.png" alt="Crânio" />
         
         <!-- Espaços onde soltar os nomes -->
-        <div class="drop-zone" data-resposta="FRONTAL" style="top: 80px; left: 160px;"></div>
-        <div class="drop-zone" data-resposta="PARIETAL" style="top: 160px; left: 40px;"></div>
-        <div class="drop-zone" data-resposta="NASAL" style="top: 200px; left: 180px;"></div>
-        <!-- Adicione os demais como preferir -->
+        <div class="drop-zone" data-resposta="FRONTAL" style="top: 65px; left: 290px;"></div>
+        <div class="drop-zone" data-resposta="PARIETAL" style="top: 90px; left: -60px;"></div>
+        <div class="drop-zone" data-resposta="TEMPORAL" style="top: 150px; left: -60px;"></div>
+        <div class="drop-zone" data-resposta="FACE ORBITAL" style="top: 120px; left: 290px;"></div>
+        <div class="drop-zone" data-resposta="ESFENOIDE" style="top: 180px; left: 290px;"></div>
+        <div class="drop-zone" data-resposta="NASAL" style="top: 220px; left: -60px;"></div>
+        <div class="drop-zone" data-resposta="ZIGOMÁTICO" style="top: 220px; left: 290px;"></div>
+        <div class="drop-zone" data-resposta="CAVIDADE NASAL" style="top: 270px; left: -60px;"></div>
+        <div class="drop-zone" data-resposta="MAXILA" style="top: 330px; left: -60px;"></div>
+        <div class="drop-zone" data-resposta="FORAME INFRAORBITAL" style="top: 260px; left: 290px;"></div>
+        <div class="drop-zone" data-resposta="FORAME MENTUAL" style="top: 300px; left: 290px;"></div>
+        <div class="drop-zone" data-resposta="MANDÍBULA" style="top: 340px; left: 290px;"></div>
       </div>
 
       <!-- Coluna direita com etiquetas -->
-      <div class="respostas">
-        <div class="draggable" draggable="true" data-nome="FRONTAL">FRONTAL</div>
-        <div class="draggable" draggable="true" data-nome="PARIETAL">PARIETAL</div>
-        <div class="draggable" draggable="true" data-nome="NASAL">NASAL</div>
-        <div class="draggable" draggable="true" data-nome="MANDÍBULA">MANDÍBULA</div>
-        <div class="draggable" draggable="true" data-nome="ESFENÓIDE">ESFENÓIDE</div>
-        <!-- Adicione todos os ossos -->
-      </div>
-    </div>
+      <div class="menu-direito">
+        <div class="respostas">
+          <div class="linha-respostas">
+            <div class="draggable" draggable="true" data-nome="FACE ORBITAL">FACE ORBITAL</div>
+            <div class="draggable" draggable="true" data-nome="MAXILA">MAXILA</div>
+          </div>
+          <div class="linha-respostas">
+            <div class="draggable" draggable="true" data-nome="CAVIDADE NASAL">CAVIDADE NASAL</div>
+            <div class="draggable" draggable="true" data-nome="ESFENOIDE">ESFENOIDE</div>
+          </div>
+            <div class="linha-respostas">
+            <div class="draggable" draggable="true" data-nome="FORAME MENTUAL">FORAME MENTUAL</div>
+          <div class="draggable" draggable="true" data-nome="FRONTAL">FRONTAL</div>
+          </div>
+          <div class="linha-respostas">
+            <div class="draggable" draggable="true" data-nome="FORAME INFRAORBITAL">FORAME INFRAORBITAL</div>
+          </div>
+          <div class="linha-respostas">
+            <div class="draggable" draggable="true" data-nome="MANDÍBULA">MANDÍBULA</div>
+            <div class="draggable" draggable="true" data-nome="NASAL">NASAL</div>
+          </div>
+          <div class="linha-respostas">
+            <div class="draggable" draggable="true" data-nome="ZIGOMÁTICO">ZIGOMÁTICO</div>
+            <div class="draggable" draggable="true" data-nome="TEMPORAL">TEMPORAL</div>
+          </div>
+          <div class="linha-respostas">
+            <div class="draggable" draggable="true" data-nome="PARIETAL">PARIETAL</div>
+          </div>  
+        </div>
 
-    <!-- Botões -->
-    <div class="botoes">
-      <button onclick="checar()">Checar respostas</button>
-      <button onclick="dica()">Dicas</button>
-      <button onclick="resetar()">Resetar respostas</button>
-    </div>
+        <div class="botoes">
+          <button onclick="checar()">Checar respostas</button>
+          <button onclick="dica()">Dicas</button>
+          <button onclick="resetar()">Resetar respostas</button>
+        </div>
+      </div>    
   </div>
 
   <script src="cranio.js"></script>

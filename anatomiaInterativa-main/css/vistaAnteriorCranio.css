@@ -43,7 +43,7 @@ body {
   color: #e0a800;
 }
 
-.menu-lateral {
+.menu-esquerdo {
   width: 190px;
   height: 425px;
   background-color: #D1D2D4;
@@ -51,25 +51,25 @@ body {
   border-radius: 0px 10px 10px 0px;
 }
 
-.menu-lateral ul {
+.menu-esquerdo ul {
   list-style: none;
   padding: 0;
 }
 
-.menu-lateral li {
+.menu-esquerdo li {
   font-size: 14px;
   cursor: pointer;
   padding: 5px 0px;
   transition: background-color 0.3s;
 }
 
-.menu-lateral li:hover {
+.menu-esquerdo li:hover {
   background-color: #E9E9E9;
 }
 
 .mais {
   /*falta posicionar para a direita*/
-  background-color: #ffc107;
+  background-color: #D1D2D4;
   color: #000;
   border: none;
   padding: 5px 10px;
@@ -81,9 +81,7 @@ body {
 }
 
 .mais:hover {
-  background-color: #e0a800;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  color: #e0a800;
 }
 
 /*IMAGEM*/
@@ -98,14 +96,14 @@ body {
   width: 100%;
 }
 
-/* Espaços para soltar nomes 
+/*Espaços para soltar nomes*/
 .drop-zone {
-  width: 120px;
-  height: 20px;
-  background-color: #ddd;
+  width: 100px;
+  height: 30px;
+  background-color: #D1D2D4;
   position: absolute;
-  border-radius: 5px;
-  border: 2px dashed transparent;
+  border-radius: 0px;
+  /*border: 2px dashed transparent;*/
 }
 
 .drop-zone.correto {
@@ -118,8 +116,13 @@ body {
   background-color: #f7c5c5;
 }*/
 
-/* Palavras arrastáveis 
+/*COLUNA DIREITA*/
 .respostas {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+/*.respostas {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -132,7 +135,7 @@ body {
   border: 1px solid #999;
   border-radius: 6px;
   cursor: grab;
-}*/
+}
 
 /* Botões 
 .botoes {
