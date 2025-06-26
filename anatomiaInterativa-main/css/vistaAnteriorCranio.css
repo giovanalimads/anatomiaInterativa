@@ -33,9 +33,14 @@ body {
   justify-content: space-between;
 }
 
-.material-symbols-outlined{
+.material-symbols-outlined {
   font-size: 20px;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.material-symbols-outlined:hover {
+  color: #e0a800;
 }
 
 .menu-lateral {
@@ -53,12 +58,32 @@ body {
 
 .menu-lateral li {
   font-size: 14px;
-  margin: 10px 0;
+  cursor: pointer;
+  padding: 5px 0px;
+  transition: background-color 0.3s;
+}
+
+.menu-lateral li:hover {
+  background-color: #E9E9E9;
 }
 
 .mais {
+  /*falta posicionar para a direita*/
+  background-color: #ffc107;
+  color: #000;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-weight: 700;
   text-align: right;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.mais:hover {
+  background-color: #e0a800;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 /*IMAGEM*/
