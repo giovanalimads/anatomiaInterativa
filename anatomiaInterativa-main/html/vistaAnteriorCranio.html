@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Ossos do Crânio</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=left_panel_close" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
   <link rel="stylesheet" href="../css/vistaAnteriorCranio.css">
 </head>
 <body>
@@ -35,7 +35,10 @@
           <li>Sistema nervoso</li>
           <li>Coração</li>
         </ul>
-        <button class="mais" onclick="window.location.href='selecaoModulo.html'">MAIS →</button>
+
+        <div class="mais-btn">
+          <button class="mais" onclick="window.location.href='selecaoModulo.html'">MAIS →</button>
+        </div>
       </div>
 
       <!-- Área central -->
@@ -44,15 +47,15 @@
         <img src="../assets/anterior-cranio-img.png" alt="Crânio" />
         
         <!-- Espaços onde soltar os nomes -->
-        <div class="drop-zone" data-resposta="FRONTAL" style="top: 65px; left: 290px;"></div>
-        <div class="drop-zone" data-resposta="PARIETAL" style="top: 90px; left: -60px;"></div>
-        <div class="drop-zone" data-resposta="TEMPORAL" style="top: 150px; left: -60px;"></div>
+        <div class="drop-zone" data-resposta="FRONTAL" style="top: 60px; left: 290px;"></div>
+        <div class="drop-zone" data-resposta="PARIETAL" style="top: 90px; left: -100px;"></div>
+        <div class="drop-zone" data-resposta="TEMPORAL" style="top: 150px; left: -100px;"></div>
         <div class="drop-zone" data-resposta="FACE ORBITAL" style="top: 120px; left: 290px;"></div>
-        <div class="drop-zone" data-resposta="ESFENOIDE" style="top: 180px; left: 290px;"></div>
-        <div class="drop-zone" data-resposta="NASAL" style="top: 220px; left: -60px;"></div>
+        <div class="drop-zone" data-resposta="ESFENOIDE" style="top: 175px; left: 290px;"></div>
+        <div class="drop-zone" data-resposta="NASAL" style="top: 220px; left: -100px;"></div>
         <div class="drop-zone" data-resposta="ZIGOMÁTICO" style="top: 220px; left: 290px;"></div>
-        <div class="drop-zone" data-resposta="CAVIDADE NASAL" style="top: 270px; left: -60px;"></div>
-        <div class="drop-zone" data-resposta="MAXILA" style="top: 330px; left: -60px;"></div>
+        <div class="drop-zone" data-resposta="CAVIDADE NASAL" style="top: 270px; left: -100px;"></div>
+        <div class="drop-zone" data-resposta="MAXILA" style="top: 330px; left: -100px;"></div>
         <div class="drop-zone" data-resposta="FORAME INFRAORBITAL" style="top: 260px; left: 290px;"></div>
         <div class="drop-zone" data-resposta="FORAME MENTUAL" style="top: 300px; left: 290px;"></div>
         <div class="drop-zone" data-resposta="MANDÍBULA" style="top: 340px; left: 290px;"></div>
@@ -70,11 +73,12 @@
             <div class="draggable" draggable="true" data-nome="NASAL">NASAL</div>
           </div>
             <div class="linha-respostas">
-            <div class="draggable" draggable="true" data-nome="FORAME MENTUAL">FORAME MENTUAL</div>
+            <div class="draggable" draggable="true" data-nome="FORAME MENTUAL">F. MENTUAL</div>
           <div class="draggable" draggable="true" data-nome="FRONTAL">FRONTAL</div>
           </div>
           <div class="linha-respostas">
-            <div class="draggable" draggable="true" data-nome="FORAME INFRAORBITAL">FORAME INFRAORBITAL</div>
+            <div class="draggable" draggable="true" data-nome="FORAME INFRAORBITAL">F. INFRAORBITAL</div>
+            <div class="draggable" draggable="true" data-nome="PARIETAL">PARIETAL</div>
           </div>
           <div class="linha-respostas">
             <div class="draggable" draggable="true" data-nome="MANDÍBULA">MANDÍBULA</div>
@@ -85,10 +89,16 @@
             <div class="draggable" draggable="true" data-nome="TEMPORAL">TEMPORAL</div>
           </div>
           <div class="linha-respostas">
-            <div class="draggable" draggable="true" data-nome="PARIETAL">PARIETAL</div>
+            
           </div>  
         </div>
 
+        <!----
+        <span class="material-symbols-outlined">checklist</span>
+        <span class="material-symbols-outlined">emoji_objects</span>
+        <span class="material-symbols-outlined">autorenew</span>
+        -->
+        
         <div class="botoes">
           <button onclick="checar()">Checar respostas</button>
           <button onclick="dica()">Dicas</button>

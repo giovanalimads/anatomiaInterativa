@@ -45,7 +45,7 @@ body {
 
 .menu-esquerdo {
   width: 190px;
-  height: 425px;
+  height: 415px;
   background-color: #D1D2D4;
   padding: 10px;
   border-radius: 0px 10px 10px 0px;
@@ -67,15 +67,18 @@ body {
   background-color: #E9E9E9;
 }
 
+.mais-btn {
+  position: relative;
+}
+
 .mais {
-  /*falta posicionar para a direita*/
   background-color: #D1D2D4;
+  position: absolute; right: 0;
   color: #000;
   border: none;
   padding: 5px 10px;
   border-radius: 8px;
   font-weight: 700;
-  text-align: right;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -98,12 +101,11 @@ body {
 
 /*Espaços para soltar nomes*/
 .drop-zone {
-  width: 100px;
-  height: 30px;
+  width: 140px;
+  height: 35px;
   background-color: #D1D2D4;
   position: absolute;
   border-radius: 0px;
-  /*border: 2px dashed transparent;*/
 }
 
 .drop-zone.correto {
@@ -114,54 +116,46 @@ body {
 .drop-zone.errado {
   border-color: red;
   background-color: #f7c5c5;
-}*/
+}
 
 /*COLUNA DIREITA*/
-.respostas {
-  display: flex;
-  gap: 10px;
+.menu-direito {
+  width: 270px;
+  height: 415px;
+  background-color: #D1D2D4;
   padding: 10px;
+  border-radius: 10px 0px 0px 10px;
 }
 
-.linha-respostas {
-  display: flex;
-  gap: 5px;
-  padding: 2px;
-}
-
-.draggable {
-  padding: 5px 5px;
-  background-color: white;
-  border: 1px solid #999;
-  border-radius: 6px;
-  cursor: grab;
-}
-
-.botoes {
-  display: flex;
-}
-
-/*.respostas {
+.respostas {
   display: flex;
   flex-direction: column;
   gap: 10px;
   padding: 10px;
 }
 
+.linha-respostas {
+  display: flex;
+  gap: 10px;
+  padding: 0;
+}
+
 .draggable {
-  padding: 8px 12px;
+  font-size: 16px;
+  padding: 2px 5px;
   background-color: white;
   border: 1px solid #999;
   border-radius: 6px;
   cursor: grab;
 }
 
-/* Botões 
 .botoes {
-  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 5px;
 }
 
 button {
@@ -171,5 +165,11 @@ button {
   border-radius: 8px;
   font-weight: bold;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
-*/
+
+button:hover {
+    background-color: #e0a800;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
