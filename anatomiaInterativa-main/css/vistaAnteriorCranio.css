@@ -158,7 +158,9 @@ body {
   gap: 5px;
 }
 
-button {
+.checar-btn, 
+.dica-btn,
+.reset-btn {
   background-color: #ffc107;
   padding: 10px 20px;
   border: none;
@@ -168,7 +170,9 @@ button {
   transition: all 0.3s ease;
 }
 
-button:hover {
+.checar-btn:hover, 
+.dica-btn:hover,
+.reset-btn:hover {
     background-color: #e0a800;
     transform: translateY(-2px);
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
