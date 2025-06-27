@@ -122,6 +122,25 @@ body {
   gap: 10px;
   padding: 10px;
 }
+
+.linha-respostas {
+  display: flex;
+  gap: 5px;
+  padding: 2px;
+}
+
+.draggable {
+  padding: 5px 5px;
+  background-color: white;
+  border: 1px solid #999;
+  border-radius: 6px;
+  cursor: grab;
+}
+
+.botoes {
+  display: flex;
+}
+
 /*.respostas {
   display: flex;
   flex-direction: column;
