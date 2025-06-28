@@ -20,7 +20,7 @@
       <div class="menu-esquerdo">
         <div class="top-menu">
           <p><strong>MAIS JOGOS:</strong></p>
-          <span class="material-symbols-outlined">left_panel_close</span>
+          <span id="toggleMenu" class="material-symbols-outlined">left_panel_close</span>
         </div>
         <ul>
           <li>Vista lateral do crânio</li>
@@ -56,8 +56,8 @@
         <div class="drop-zone" data-resposta="ZIGOMÁTICO" style="top: 220px; left: 290px;"></div>
         <div class="drop-zone" data-resposta="CAVIDADE NASAL" style="top: 270px; left: -100px;"></div>
         <div class="drop-zone" data-resposta="MAXILA" style="top: 330px; left: -100px;"></div>
-        <div class="drop-zone" data-resposta="FORAME INFRAORBITAL" style="top: 260px; left: 290px;"></div>
-        <div class="drop-zone" data-resposta="FORAME MENTUAL" style="top: 300px; left: 290px;"></div>
+        <div class="drop-zone" data-resposta="F. INFRAORBITAL" style="top: 260px; left: 290px;"></div>
+        <div class="drop-zone" data-resposta="F. MENTUAL" style="top: 300px; left: 290px;"></div>
         <div class="drop-zone" data-resposta="MANDÍBULA" style="top: 340px; left: 290px;"></div>
       </div>
 
@@ -73,11 +73,11 @@
             <div class="draggable" draggable="true" data-nome="NASAL">NASAL</div>
           </div>
             <div class="linha-respostas">
-            <div class="draggable" draggable="true" data-nome="FORAME MENTUAL">F. MENTUAL</div>
+            <div class="draggable" draggable="true" data-nome="F. MENTUAL">F. MENTUAL</div>
           <div class="draggable" draggable="true" data-nome="FRONTAL">FRONTAL</div>
           </div>
           <div class="linha-respostas">
-            <div class="draggable" draggable="true" data-nome="FORAME INFRAORBITAL">F. INFRAORBITAL</div>
+            <div class="draggable" draggable="true" data-nome="F. INFRAORBITAL">F. INFRAORBITAL</div>
             <div class="draggable" draggable="true" data-nome="PARIETAL">PARIETAL</div>
           </div>
           <div class="linha-respostas">
@@ -101,6 +101,8 @@
       </div>    
   </div>
 
-  <script src="cranio.js"></script>
+  <script src="../js/menuEsquerdo.js"></script>
+  <script src="../js/dragAndDrop.js"></script>
+  <script src="../js/botoesMenuDireito.js"></script>
 </body>
 </html>

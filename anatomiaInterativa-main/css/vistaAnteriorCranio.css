@@ -44,11 +44,24 @@ body {
 }
 
 .menu-esquerdo {
-  width: 190px;
+  width: 200px;
   height: 415px;
   background-color: #D1D2D4;
   padding: 10px;
   border-radius: 0px 10px 10px 0px;
+  position: relative;
+  transition: transform 0.3s ease; /*Faz a transição do abrir e fechar menu*/
+}
+
+.menu-esquerdo.fechado {
+  transform: translateX(-171px); /* Deixa uma aba de ~30px visível */
+}
+
+#toggleMenu {
+  position: absolute;
+  right: 0;
+  padding: 5px;
+  cursor: pointer;
 }
 
 .menu-esquerdo ul {
@@ -73,10 +86,11 @@ body {
 
 .mais {
   background-color: #D1D2D4;
-  position: absolute; right: 0;
+  position: absolute; 
+  right: 0;
   color: #000;
   border: none;
-  padding: 5px 10px;
+  padding: 5px 20px;
   border-radius: 8px;
   font-weight: 700;
   cursor: pointer;
