@@ -28,4 +28,10 @@ function resetar() {
     zone.textContent = '';          // limpa o texto dentro da zona
     zone.style.borderColor = '';   // remove a cor da borda
   });
+
+  // Reexibe todos os draggables
+  const draggables = document.querySelectorAll('.draggable');
+  draggables.forEach(item => {
+    item.style.visibility = 'visible';
+  });
 }
